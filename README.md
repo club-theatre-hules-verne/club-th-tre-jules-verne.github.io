@@ -1,1 +1,1 @@
-# club-th-tre-jules-verne.github.io
+# club-theatre-jules-verne.github.io
