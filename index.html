@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects - Stolas Production</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header id="header"></header>
+
+    <main>
+        <h1>Our Projects</h1>
+        <div class="box">
+            <h2>Project A</h2>
+            <p>A groundbreaking initiative focusing on...</p>
+        </div>
+        <div class="box">
+            <h2>Project B</h2>
+            <p>A collaborative effort designed to...</p>
+        </div>
+        <div class="box">
+            <h2>Project C</h2>
+            <p>An innovative solution aimed at...</p>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script>
+        fetch("/header.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("header").innerHTML = data);
+
+        fetch("/footer.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+</body>
+</html>
